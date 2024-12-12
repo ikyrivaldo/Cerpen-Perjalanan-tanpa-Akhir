@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .contact-section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hubungi Saya</h1>
+    
+    <div class="contact-section">
+        <h2>Kirim Pesan</h2>
+        <form action="https://formspree.io/f/manyzvoo" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required rows="5"></textarea>
+            
+            <input type="submit" value="Kirim Pesan" class="submit-btn">
+        </form>
+    </div>
+
+    <div class="contact-section">
+        <h2>Informasi Kontak</h2>
+        <p>
+            <strong>Email:</strong> 
+            <a href="mailto:aderizkyrivaldo490@gmail.com">aderizkyrivaldo490@gmail.com</a>
+        </p>
+
+        <div class="social-links">
+            <a href="https://instagram.com/iky_rivaldoo" target="_blank">Instagram: @iky_rivaldoo</a>
+        </div>
+    </div>
+</body>
+</html>
